@@ -3,8 +3,10 @@ package com.wisercat.petmanagement;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table
 public class Pet {
     @Id
     @GeneratedValue
@@ -32,5 +34,43 @@ public class Pet {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getIdentificationCode() {
+        return identificationCode;
+    }
+
+    public void setIdentificationCode(String identificationCode) {
+        this.identificationCode = identificationCode;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getFurColor() {
+        return furColor;
+    }
+
+    public void setFurColor(String furColor) {
+        this.furColor = furColor;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
 }
