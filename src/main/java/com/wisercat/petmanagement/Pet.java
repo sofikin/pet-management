@@ -26,6 +26,10 @@ public class Pet {
         this.country = country;
     }
 
+    public Pet() {
+
+    }
+
     public long getId() {
         return id;
     }
