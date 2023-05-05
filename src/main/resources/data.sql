@@ -1,0 +1,3 @@
+MERGE INTO pet (id, name, identification_code, type, fur_color, country)  KEY  (id) VALUES (1, 'Mustikas', '202211151535', 'Cat', 'Black', 'Estonia');
+MERGE INTO pet (id, name, identification_code, type, fur_color, country)  KEY  (id) VALUES (2, 'Roy', '202211151536', 'Dog', 'Brown', 'Latvia');
+MERGE INTO pet (id, name, identification_code, type, fur_color, country)  KEY  (id) VALUES (3, 'Charles', '202211151536', 'Horse', 'White', 'Norway');
