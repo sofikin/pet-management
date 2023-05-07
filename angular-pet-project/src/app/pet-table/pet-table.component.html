@@ -1,1 +1,23 @@
-<p>pet-table works!</p>
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Identification Code</th>
+    <th>Type</th>
+    <th>Fur Color</th>
+    <th>Country</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let pet of pet">
+    <td>{{pet.name}}</td>
+    <td>{{pet.identificationCode}}</td>
+    <td>{{pet.type}}</td>
+    <td>{{pet.furColor}}</td>
+    <td>{{pet.country}}</td>
+  </tr>
+  </tbody>
+</table>
+
+<app-pet-form (petAdded)="onPetAdded($event)"></app-pet-form>
+```
