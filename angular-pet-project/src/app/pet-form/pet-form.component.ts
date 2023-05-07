@@ -30,6 +30,7 @@ export class PetFormComponent {
   onSubmit() {
     this.http.post<NewPet>('http://localhost:8080/pet', this.newPet).subscribe(newPet => {
       this.petAdded.emit(newPet);
+      // Reset form
       this.newPet = {
         name: '',
         identificationCode: '',
