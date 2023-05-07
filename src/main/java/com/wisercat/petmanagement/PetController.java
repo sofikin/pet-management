@@ -14,7 +14,7 @@ public class PetController {
     @Autowired
     private PetRepository petRepository;
 
-    @GetMapping("/pet")
+    @GetMapping("/pets")
     @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<List<Pet>> getAllPets() {
         List<Pet> pets = petRepository.findAll();

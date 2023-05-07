@@ -10,7 +10,7 @@ export class PetService {
   private petsUrl: string;
 
   constructor(private http: HttpClient) {
-    this.petsUrl = 'http://localhost:8080/pet';
+    this.petsUrl = 'http://localhost:8080/pets';
   }
 
   public findAll(): Observable<Pet[]> {
