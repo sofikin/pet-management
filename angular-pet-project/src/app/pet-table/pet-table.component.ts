@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
-interface Pet {
+export interface Pet {
   name: string;
   identificationCode: string;
   type: string;
