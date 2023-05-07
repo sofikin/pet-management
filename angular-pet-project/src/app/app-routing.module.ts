@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import {PetTableComponent} from "./pet-table/pet-table.component";
 
 const routes: Routes = [
-  { path: '',   redirectTo: '/pet', pathMatch: 'full' },
-  { path: 'pet', component: PetTableComponent },
+  { path: '',   redirectTo: '/pets', pathMatch: 'full' },
+  { path: 'pets', component: PetTableComponent },
 ];
 
 @NgModule({

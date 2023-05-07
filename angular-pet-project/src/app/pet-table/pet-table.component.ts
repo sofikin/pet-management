@@ -21,7 +21,7 @@ export class PetTableComponent implements OnInit {
 
   // Loads pets from API
   ngOnInit() {
-    this.http.get<Pet[]>('http://localhost:8080/pet').subscribe(pet => {
+    this.http.get<Pet[]>('http://localhost:8080/pets').subscribe(pet => {
       this.pet = pet;
     });
   }

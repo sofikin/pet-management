@@ -1,11 +1,11 @@
 <table>
   <thead>
   <tr>
-    <th>Name</th>
-    <th>Identification Code</th>
-    <th>Type</th>
-    <th>Fur Color</th>
-    <th>Country</th>
+    <th scope="col">Name</th>
+    <th scope="col">Identification Code</th>
+    <th scope="col">Type</th>
+    <th scope="col">Fur Color</th>
+    <th scope="col">Country</th>
   </tr>
   </thead>
   <tbody>
@@ -15,6 +15,9 @@
     <td>{{pet.type}}</td>
     <td>{{pet.furColor}}</td>
     <td>{{pet.country}}</td>
+    <td>
+      <a href="#" class="btn btn-primary">Edit pet</a>
+    </td>
   </tr>
   </tbody>
 </table>
