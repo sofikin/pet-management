@@ -1,1 +1,24 @@
-<p>pet-form works!</p>
+<h2>Add new pet</h2>
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" [(ngModel)]="newPet.name">
+  </div>
+  <div class="form-group">
+    <label for="identificationCode">Identification Code</label>
+    <input type="text" class="form-control" id="identificationCode" name="identificationCode" [(ngModel)]="newPet.identificationCode">
+  </div>
+  <div class="form-group">
+    <label for="type">Type</label>
+    <input type="text" class="form-control" id="type" name="type" [(ngModel)]="newPet.type">
+  </div>
+  <div class="form-group">
+    <label for="furColor">Fur Color</label>
+    <input type="text" class="form-control" id="furColor" name="furColor" [(ngModel)]="newPet.furColor">
+  </div>
+  <div class="form-group">
+    <label for="country">Country</label>
+    <input type="text" class="form-control" id="country" name="country" [(ngModel)]="newPet.country">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
